@@ -30,12 +30,12 @@ Selenium.prototype.doSetContext = function(context) {
    newdiv.style.overflow = "hidden";
    newdiv.style.margin = "0 0 0 -250px";
    newdiv.style.padding = "5px";
-   newdiv.style.border = "1px solid #333";
    newdiv.style.MozBorderRadius = "5px";
    newdiv.style.borderRadius = "5px";
    newdiv.style.textAlign = "center";
    newdiv.style.font = "normal bold 20px/25px Arial,sans-serif";
-   newdiv.style.background = "#EEE";
+   newdiv.style.background = "#333";
+   newdiv.style.color = "#EEE";
    newdiv.style.opacity = 0.8;
    newdiv.innerHTML = context;   
    this.browserbot.getUserWindow().document.body.appendChild(newdiv);
