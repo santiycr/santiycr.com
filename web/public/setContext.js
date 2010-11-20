@@ -12,7 +12,6 @@ function fade(div) {
 }
 
 Selenium.prototype.doSetContext = function(context) {
-//function setContext(context){
    var ctx = this.browserbot.getUserWindow().document.getElementById("context");
    var newdiv;
    if (ctx) {
@@ -40,5 +39,5 @@ Selenium.prototype.doSetContext = function(context) {
    newdiv.style.opacity = 0.8;
    newdiv.innerHTML = context;   
    this.browserbot.getUserWindow().document.body.appendChild(newdiv);
-   window.contextTimeout = setTimeout(function(){fade(newdiv);}, 2000);
+   window.contextTimeout = setTimeout(function(){fade(newdiv);}, 3000);
 }
