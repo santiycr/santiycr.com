@@ -1,33 +1,118 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Santiago's website. Just a hub pointing people to anywhere I care about">
+    <meta name="author" content="Santiago Suarez Ordo&ntilde;ez">
     <title>Santiago Suarez Ordo&ntilde;ez</title>
+    <link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
+   <style>
+   #main{
+       width:700px;
+       margin: 0 auto;
+   }
+    
+   .drop-shadow {
+       position:relative;
+       float:left;
+       padding:1em;
+       margin:2em 10px 4em;
+       background:#fff;
+       -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+   }
+    
+   .drop-shadow:before,
+   .drop-shadow:after {
+       content:"";
+       position:absolute;
+       z-index:-2;
+   }
+    
+   .drop-shadow p {
+       font-size:16px;
+   }
+    
+    
+   .lifted {
+       -moz-border-radius:4px;
+       border-radius:4px;
+   }
+    
+   .lifted:before,
+   .lifted:after {
+       bottom:15px;
+       left:10px;
+       width:50%;
+       height:20%;
+       max-width:300px;
+       -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);  
+       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+       box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+       -webkit-transform:rotate(-3deg);   
+       -moz-transform:rotate(-3deg);  
+       -ms-transform:rotate(-3deg);  
+       -o-transform:rotate(-3deg);
+       transform:rotate(-3deg);
+   }
+    
+   .lifted:after {
+       right:10px;
+       left:auto;
+       -webkit-transform:rotate(3deg);  
+       -moz-transform:rotate(3deg); 
+       -ms-transform:rotate(3deg); 
+       -o-transform:rotate(3deg);
+       transform:rotate(3deg);
+   }
+    
+   </style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="scripts/innershiv.min.js"></script>
+  <![endif]-->
   </head>
   <body>
+  <div id="main">
+  <div style="font-family: 'Muli', sans-serif;" class="lifted drop-shadow">
+    <span style="float:right">
+      <img src="http://www.gravatar.com/avatar/7d55858f2433617058e9ec137fa07590.png" alt="pic" />
+    </span>
     <h1>Santiago Suarez Ordo&ntilde;ez</h1>
-    <img src="http://www.gravatar.com/avatar/7d55858f2433617058e9ec137fa07590.png" alt="pic" />
     <p>
-      Hi, welcome to my website. I decided not to make anything fancy, but just point people to myself in the different tools I use across the web.
+      Hi, welcome to my <i>website</i>.<br>
+      I decided not to make anything fancy, but just point people to myself in the different sites I use across the web.
     </p>
     <p>
-      Wanna know me? See myself online, what I do an how I do it.<br/>
+      Wanna know me? See myself online, what I do an how I do it.<br>
       Wanna contact me? You'll probably find my email somewhere over there...
     </p>
     <ul>
-        <li><a href="http://www.google.com/profiles/santiycr">Google Profile</a></li>
-        <li><a href="http://www.linkedin.com/in/santiycr">LinkedIn</a></li>
-        <li><a href="http://twitter.com/santiycr">Twitter</a></li>
-        <li><a href="http://www.google.com/reader/shared/santiycr">Google Reader</a></li>
-        <li><a href="http://github.com/santiycr">Github</a></li>
-        <li><a href="http://stackoverflow.com/users/154163/santi">Stack Overflow</a></li>
-        <li><a href="http://picasaweb.google.com/santiycr">Picasa</a></li>
-        <li><a href="http://www.facebook.com/people/Santiago-Suarez-Ordonez/100000212508377">Facebook</a></li>
-        <li><a href="http://www.youtube.com/santiycr">Youtube</a></li>
-        <li><a href="http://digg.com/santiycr">Digg</a></li>
+        <li><a href="http://www.google.com/profiles/santiycr">Google Profile</a> - The best general profile of myself I could find</li>
+        <li><a href="http://twitter.com/santiycr">Twitter</a> - geeking</li>
+        <li><a href="http://www.linkedin.com/in/santiycr">LinkedIn</a> - networking</li>
+        <li><a href="http://www.facebook.com/people/Santiago-Suarez-Ordonez/100000212508377">Facebook</a> - friends</li>
+        <li><a href="http://github.com/santiycr">Github</a> - coding</li>
     </ul>
     <p>
     What do I do? I work for <a href="http://saucelabs.com">Sauce Labs</a>, we
-    do <a href="http://saucelabs.com">cross browser testing</a> in the cloud
-    with Selenium, so check us out!
+    do <a href="http://saucelabs.com">cross browser testing in the cloud</a>
+    both manual and automated using Selenium. Check us out!
     </p>
+  </div>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26991938-1']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>
   </body>
 </html>
